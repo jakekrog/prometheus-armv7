@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian:latest
 MAINTAINER "Ajeet Singh Raina" <ajeetraina@gmail.com>
 
-RUN apt-get update && apt-get install -qy curl ca-certificates
+RUN apt-get update && apt-get install -qy curl ca-certificates avahi-daemon
 WORKDIR /root/
 RUN mkdir /root/prometheus
 
